@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Tap Market - Точна Копія</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">ONE TAP MARKET</div>
+        <nav>
+            <a href="#info">підтримка</a>
+            <a href="#info">про нас</a>
+            <a href="#market">обрати покупку</a>
+            <a href="#cart">кошик</a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <section class="hero">
+            <div class="hero-banners">
+                <img src="img/image 25.png" alt="CS2 Logo">
+            </div>
+            <h1>COUNTER STRIKE 2</h1>
+            <p>Отримуй топові скіни за цінами, нижчими ніж у Steam.</p>
+        </section>
+
+
+        <!-- <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="введіть назву скіна... 🔍">
+            <button id="searchBtn">Знайти</button>
+        </div> -->
+        <form id="searchForm class="search-bar lass="d-flex mx-auto" role="search">
+            <input class="frome-controle me-2" type="search" placeholder="пошук" aria-laber="Search" id="searchInput" placeholder="введіть назву скіна... 🔍">
+            <button class="btn btn-outLine-secondary btn-search" type="submit" id="searchBtn">Знайти</button>
+        </div>
+        
+        <main class="market-grid" id="market">
+            <div class="column">
+                <h2 class="title">пістолети</h2>
+                <div class="items" id="pistolsContainer">
+                    <div class="card" data-name="p250 cassette" data-price="0.15">
+                        <img src="img/image 3.png" alt="p250">
+                        <p>P250 | Cassette</p>
+                        <span>0.15$</span>
+                        <button class="add-to-cart">в кошик</button>
+                    </div>
+                    <div class="card" data-name="glock-18 oxide blaze" data-price="1.00">
+                        <img src="img/Rectangle 8.png" alt="glock">
+                        <p>Glock-18 | Oxide Blaze</p>
+                        <span>1$</span>
+                        <button class="add-to-cart">в кошик</button>
+                    </div>
+                    <div class="card" data-name="usp-s mudder" data-price="2.00">
+                        <img src="img/image 4 (2).png" alt="usp">
+                        <p>USP-S | Mudder</p>
+                        <span>2$</span>
+                        <button class="add-to-cart">в кошик</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column line">
+                <h2 class="title">гвинтівки</h2>
+                <div class="items" id="riflesContainer">
+                    <div class="card" data-name="ak-47 uncharted" data-price="3.00">
+                        <img src="img/image 5.png" alt="ak">
+                        <p>AK-47 | Uncharted</p>
+                        <span>3$</span>
+                        <button class="add-to-cart">в кошик</button>
+                    </div>
+                    <div class="card" data-name="m4a4 howl" data-price="1430.00">
+                        <img src="img/Rectangle 10.png" alt="howl">
+                        <p>M4A4 | Howl</p>
+                        <span>1430$</span>
+                        <button class="add-to-cart">в кошик</button>
+                    </div>
+                    <div class="card" data-name="awp dragon lore" data-price="2500.00">
+                        <img src="img/image 10.png" alt="awp">
+                        <p>AWP | Dragon Lore</p>
+                        <span>2500$</span>
+                        <button class="add-to-cart">в кошик</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <section id="info" class="about-section">
+            <div class="support">
+                <h3>підтримка</h3>
+                <p>Ми онлайн 24/7</p>
+                 <img src="img/Group 1.png" alt="howl">
+            </div>
+            <div class="about">
+                <h3>про нас</h3>
+                <p>Найшвидші трейди в Україні.</p>
+                <iframe class="image1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.3305641176776!2d25.322619276455903!3d50.75090397165106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599e643505bc9%3A0x37635e2569ef02e!2z0LLRg9C70LjRhtGPINCG0LLQsNC90LAg0KTRgNCw0L3QutCwLCDQm9GD0YbRjNC6LCDQktC-0LvQuNC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQzMDAw!5e0!3m2!1suk!2sua!4v1772552054495!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+        <section id="cart" class="cart-section">
+            <div class="cart-header">кошик</div>
+            <div class="cart-body">
+                <ul id="cartList">
+                    </ul>
+                <div class="inputs">
+                    <input type="text" placeholder="ваше ім'я:">
+                    <input type="text" placeholder="ваша адреса (Trade URL):">
+                </div>
+                <div class="total">загальна сума: <span id="totalPrice">0</span>$</div>
+                <button class="order-btn" onclick="alert('Замовлення оформлено!')">замовити</button>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <a href="#">у гору ▲</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
